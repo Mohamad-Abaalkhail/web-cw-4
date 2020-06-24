@@ -12,23 +12,57 @@ html, body{
     6. border radius */
 
 /* عند الحاجه w3schools قم بالاستعانه بموقع  */
+.flex{
+    display: flex;
+    height: 100%;
 
+}
 .sidebar{
     /* pxالعرض هنا يجب ان يكون 120 */
+    background-color:#114b5f ;
+    height: 98%;
+    width: 120px;
+    border-radius: 12px;
+    margin: 4px;
 }
-
+.aflex{
+    margin-right: 6px;
+}
 .header{
     /* pxالطول هنا يجب ان يكون 80 */
+    background-color: #456990;
+    height: 80px;
+    color: ivory;
+    padding: 3px;
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 3px;
+    display: flex;
+}
+.header :hover{
+    color: lawngreen;
+    background-color: navy;
 }
 
 .main{
-
+background-color: #028090;
+height: 86%;
+margin: 5px;
+width: 100%;
+border-radius: 4.8px;
+text-align: center;
 }
-
 a{
-    color: darkgray;
-    /* اجعل شكل اللنك من غير خط اسفل الكلام */
+    color:grey;
+    text-align: left;
+    text-decoration:none ;
+    padding: 0px;
 }
+a:hover{
+    color: black;
+}
+    
+
 
 /* !بــونص */
 /* (hover) اجعل اللنك يتغير لونه الى الابيض عند التأشير عليه */
@@ -44,5 +78,43 @@ h1{
 h2{
     margin: 0;
     margin-left: 5px;
+}
+ul{
+    list-style-type: none;
+}
+
+li{
+    color: ivory;
+    text-align: left;
+    margin: 0px;
+}
+.main a{
+    text-decoration: none;
+    color: cornflowerblue;
+    background-color: cornsilk;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 1;
+  transition: all 0.3s ease;
+}
+.main a:hover{
+background-color: darkmagenta;
+color: pink;
+transform: scale(1);
+@keyframes{
+0%{
+    opacity: 0.4;
+}
+50%{
+    opacity:0.6;
+}
+100%{
+    opacity: 1;
+}
+}
+}
+.main a:active{
+    color: cornflowerblue;
+    background-color: cornsilk;
 }
 
